@@ -1,1 +1,0 @@
-{"uuid": "44bbeec0-0ec4-4b7e-a890-aa2edcdc4535", "children": ["dafe93d2-00fe-4d5a-815b-581745bd06a4"], "befores": [{"name": "register_new_courier_and_return_login_password", "status": "passed", "start": 1719388961661, "stop": 1719388962070}], "start": 1719388961661, "stop": 1719388963230}

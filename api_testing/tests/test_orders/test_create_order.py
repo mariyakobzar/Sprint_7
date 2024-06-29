@@ -4,6 +4,8 @@ import allure
 import pytest
 import requests
 
+from api_testing.data import Urls
+
 
 class TestCreateOrder:
 
@@ -32,6 +34,6 @@ class TestCreateOrder:
         }
         payload_string = json.dumps(payload)
         print(payload_string)
-        response = requests.post("https://qa-scooter.praktikum-services.ru/api/v1/orders", data=payload_string)
+        response = requests.post(f'{Urls.URL}{Urls.CREATE_ORDER}', data=payload_string)
         print(response.json()['track'])
         assert 201 == response.status_code and response.json()['track']
